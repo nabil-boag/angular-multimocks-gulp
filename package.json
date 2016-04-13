@@ -1,0 +1,30 @@
+{
+  "name": "angular-multimocks-gul",
+  "version": "0.0.1",
+  "description": "A gulp plugin to create multimock files",
+  "author": "Nabil Boag <info@nabilboag.co.uk>",
+  "contributors": [
+    {
+      "name": "Nabil Boag",
+      "email": "info@nabilboag.co.uk"
+    }
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nabil-boag/angular-multimocks-gulp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nabil-boag/angular-multimocks-gulp.git/issues"
+  },
+  "keywords": [
+    "angular",
+    "multimocks",
+    "gulp"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "gulp-util": "^3.0.7",
+    "through2": "^2.0.1"
+  }
+}
