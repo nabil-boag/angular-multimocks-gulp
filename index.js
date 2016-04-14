@@ -1,16 +1,15 @@
 var through = require('through2');
 var gutil = require('gulp-util');
-var MultimocksTask = require('./tasks/multimocksTask.js');
+var multimocksTask = require('./lib/multimocksTask.js');
 
 module.exports = function(config) {
 
-  var logger = function (message, content) {
-    gutil.log(message, content);
-  };
+  // var logger = function (message, content) {
+  //   gutil.log(message, content);
+  // };
 
-  return through.obj(function(file, encoding, callback) {
-    var multimocksTask = new MultimocksTask(logger);
-    multimocksTask.writeScenarioData(file);
-    callback(null, file);
+  return through.obj(function(source, encoding, callback) {
+    multimocksTask.writeScenarioData(source, config);
+    callback(null, source);
   });
 };

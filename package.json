@@ -25,6 +25,7 @@
   "license": "MIT",
   "dependencies": {
     "gulp-util": "^3.0.7",
+    "lodash": "^4.11.0",
     "through2": "^2.0.1"
   }
 }
